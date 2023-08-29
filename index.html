@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="background">  
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-s"></i>
+                        <div class="logo-text"> Sudharsh</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Aboutme.html">About Me</a></li>
+                            <li><a href="Projects.html">projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="container">
+                    <div class="profilepic">
+                        <img src="S:\HTML\BG\sud.jpg" alt="profilepic">
+                    </div>
+                    
+                    <div class="profiletext">
+                        <h5>
+                            Hi ! &nbsp  I'am &nbsp  <span class="input">Sudharshan</span>
+                        </h5> 
+                        <h1>UX/UI Designer</h1>
+                        <p>A Budding Designer with curiosity and passion trying to get in line. 
+                            I am passionate about creating comfortable designs and operations for 
+                            users with creativity and fascination. As a marketing designer, I have designed Logos, posters, flyers and effective promotional pages. As
+                        a next step, I designed some sample wesites using Figma, Illustrator and photoshop.
+                            Currently seeking for a professional Ux/Ui design role to develop myself and I am eager to learn and use my skills for effective designs.</p>
+                         
+                        <div class="btn-group">
+                        <a href="" class="btn active">Download CV</a>
+                        <a href="" class="btn">Contact</a>
+                         </div>
+
+                        <div class="social">
+                            <a href="https://www.facebook.com/sudharshan.s.1272/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="linkedin.com/in/sudharshan-saravanan-108044181"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Sudharsh11"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/sudharsh__/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.behance.net/sudharssaravan"><i class="fa-brands fa-behance"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+
+        <script>
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector("navlinks li")
+            
+            togglebtn.addEventListener("click", function(){
+                this.classlist.toggle(".click");
+                nav.classList.toggle(".open");
+            })
+            
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    text-decoration:none;
+}
+body{
+    overflow-x: hidden;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+.wrapper{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width: 45px;
+    background-color: rgb(108, 252, 252);
+    border-radius: 50%;
+    color: rgb(10, 10, 10);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.logo .logo-text{
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(211, 246, 235);
+}
+nav .togglebtn{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+display: block;
+background-color: darkgray;
+margin: 5px 0;
+width: 100%;
+height: 3px;
+transition: 0.3s;
+transition-property: transform, opacity;
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+    transition: transform(0.4s);
+}
+nav .navlinks li a{
+    color: rgb(133, 251, 255);
+    margin-right: 40px;
+}
+nav .navlinks li:hover{
+    transform: translateY(-5px);
+}
+.squares{
+    height: 200px;
+    width: 100vw;
+    margin-top: 200px;
+    margin-left: 250px;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(255, 254, 254);opacity: 80%;
+    background-position: center;
+    background-size: cover;
+    transition: transition 0.5s;
+    margin-left: 40px;
+}
+
+.square a{
+    color: rgb(37, 37, 37);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 80px; left: 50px;
+    text-decoration: none; 
+}
+.square:hover{
+    transform:translateY(-20px);
+}
